@@ -1,0 +1,31 @@
+ul {
+  list-style: none;
+  padding: 0;
+  max-width: 400px;
+  margin: 20px auto;
+}
+.todo-item {
+  color: gray;
+  background: #f9f9f9;
+  padding: 12px 16px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: color 0.2s, background 0.2s;
+}
+.todo-item.completed {
+  color: #2196f3;
+  background: #e0ffe0;
+}
+.tick {
+  display: none;
+  font-size: 1.2em;
+  margin-left: 10px;
+  color: #2196f3;
+}
+.todo-item.completed .tick {
+  display: inline;
+}
